@@ -1,0 +1,1083 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;600;900&display=swap");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-size: 65.2%;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.espaciado-1 {
+  letter-spacing: 1rem;
+}
+
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.active {
+  font-weight: 900;
+  color: white !important;
+}
+
+.home {
+  height: 100vh;
+  background-color: black;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.4;
+  background-color: #0a0a0a;
+  background-image: url("/bulid/img/bg_home.png");
+}
+.home .header {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home .header .logosection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  z-index: 30;
+}
+.home .header .logosection .logo {
+  position: absolute;
+  top: -80px;
+  transition: 0.2s ease-out;
+}
+.home .header .logosection .logo img {
+  width: 150px;
+  z-index: 40;
+}
+.home .header .logosection .brand {
+  font-size: 4rem;
+  color: white;
+  font-weight: 300;
+  transition: 0.3s ease-out;
+  transition-delay: 0.1s;
+  cursor: pointer;
+}
+.home .header .logosection .slogan {
+  position: absolute;
+  background-color: #ffee01;
+  color: #0a0a0a;
+  font-size: 1.4rem;
+  padding: 0.3rem 1rem;
+  border-radius: 0.2rem;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  text-align: center;
+  font-weight: 600;
+}
+.home .header .logosection:hover .logo {
+  transform: translateY(-40%);
+}
+.home .header .logosection:hover .brand {
+  transform: translateY(-60%);
+}
+.home .header .logosection:hover .slogan {
+  opacity: 1;
+  transform: translateY(20px);
+}
+.home .header p {
+  color: #414141;
+  font-size: 1.2rem;
+  width: 60%;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: 0.3s ease-out;
+  letter-spacing: 2px;
+  cursor: pointer;
+  z-index: 10;
+}
+.home .header p:hover {
+  color: white;
+  transform: translateY(-10px) scale(1.01);
+}
+
+.bg-home-about {
+  transition: 0.9s ease-out;
+  color: cyan;
+  opacity: 0.9;
+}
+.bg-home-about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: -20;
+  background-image: url("https://picsum.photos/1920/900?random=2");
+}
+
+.bg-home-experience {
+  transition: 0.9s ease-out;
+  background-color: black;
+  opacity: 0.9;
+}
+.bg-home-experience::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: -24;
+  background-image: url("https://picsum.photos/1920/900?random=1");
+}
+
+.bg-home {
+  transition: 2s ease-out;
+  background-color: black;
+  opacity: 0.9;
+}
+.bg-home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -24;
+  background-position: top;
+}
+
+.fijo {
+  position: absolute;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  top: -50px;
+  left: 0;
+  background-color: #0a0a0a;
+  z-index: 100000;
+  display: flex;
+  justify-content: space-between;
+}
+.fijo .fondoMenu, .fijo .fondo-image {
+  display: none;
+}
+.fijo .fondo-image {
+  margin-right: 100px;
+}
+
+.navbar-responsive {
+  background-color: #ffee01;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 2rem;
+  display: none;
+  z-index: 100000;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .navbar-responsive {
+    display: inline-block;
+  }
+}
+.navbar-responsive:hover {
+  background-color: white;
+}
+.navbar-responsive:hover .icono {
+  transform: scale(1.1);
+}
+.navbar-responsive .contenido-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-responsive .icono {
+  transition: 0.3s ease-out;
+  color: #0a0a0a;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+.navbar-responsive .menu-responsive, .navbar-responsive li {
+  list-style: none;
+  padding: 0;
+}
+.navbar-responsive .menu-responsive li, .navbar-responsive li li {
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  transition: 0.3s ease-out;
+}
+.navbar-responsive .menu-responsive li:hover, .navbar-responsive li li:hover {
+  background-color: #0a0a0a;
+}
+
+.navbar {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  z-index: 2;
+  overflow: hidden;
+  padding: 0;
+  margin: 3rem 0rem;
+}
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
+.navbar .fondo-image {
+  transition: 0.2s ease-out;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.navbar .fondo-image h2 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #dddddd;
+}
+.navbar .fondo-image p {
+  text-align: center;
+  margin: 0;
+  color: rgb(95, 95, 95);
+  width: 100%;
+  font-size: .7rem;
+}
+.navbar .fondo-image img {
+  width: 100px;
+}
+.navbar .fondoMenu {
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: -100px;
+  background-color: white;
+  color: black;
+  font-size: 4rem;
+  transition: 0.3s ease-out;
+  z-index: 10000;
+  opacity: 0;
+}
+.navbar .links {
+  font-size: 1.2rem;
+  color: #969696;
+  list-style: none;
+  margin: 0 1rem;
+  transition: 0.2s ease-out;
+  padding: 0.4rem;
+  z-index: 1000;
+  border-radius: 5px;
+  text-align: center;
+}
+.navbar .links:hover {
+  background-color: #ffee01;
+  letter-spacing: 0.3rem;
+  padding: 0.1rem 1rem;
+  font-weight: 600;
+  color: black;
+  margin: 0 1rem;
+}
+.navbar:hover .fondoMenu {
+  background-color: rgba(197, 197, 197, 0.979);
+  transform: translateX(100px);
+  opacity: 1;
+}
+
+.experience {
+  width: 100%;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.about {
+  padding: 1rem;
+  padding-top: 120px;
+  padding-bottom: 10rem;
+  background-color: #ffee01;
+  position: relative;
+}
+.about:before {
+  position: absolute;
+  content: "about me";
+  color: white;
+  font-weight: 900;
+  font-size: 10rem;
+  z-index: 0;
+  left: 0px;
+  bottom: -35px;
+}
+.about h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+}
+.about h3 {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: white;
+  text-transform: lowercase;
+  padding: 0.4rem 2rem;
+  background-color: #0a0a0a;
+  border-radius: 0.3rem;
+}
+
+.contenido {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  margin: 1rem 0;
+}
+.contenido h4 {
+  font-size: 3rem;
+}
+@media (max-width: 768px) {
+  .contenido {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0rem;
+  }
+}
+.contenido .skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  /* height: 30PX; */
+  background-color: #0a0a0a;
+  color: yellow;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  margin: 1rem 0;
+  transition: 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .contenido .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.contenido .skills::before {
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 50px;
+  background-color: black;
+  z-index: -1;
+  top: -80PX;
+  left: -5px;
+  transition: 0.2s ease-out;
+}
+.contenido .skills:hover {
+  background-color: white;
+  color: #0a0a0a;
+  /* height: 200px; */
+}
+/* .contenido .skills:hover::before {
+  transform: translateY(70px);
+}
+.contenido .skills:hover .barra {
+  background-color: #ffee01;
+}
+.contenido .skills:hover .barra .porcentaje {
+  background-color: #0a0a0a;
+  color: white;
+}
+.contenido .skills:hover .parrafo {
+  opacity: 1;
+} */
+.contenido .skills .barra {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  border-radius: 2px;
+  margin: 0 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.contenido .skills .barra .porcentaje {
+  color: #0a0a0a;
+  position: relative;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: #ffee01;
+  width: 90%;
+  text-align: center;
+}
+
+
+.contenido .skills .iconos {
+  font-size: 1.5rem;
+  margin: 0 0.4rem;
+  /* display: flex; */
+  align-items: center;
+}
+.contenido .skills .iconos .iconos_i{
+  font-size: 1rem;
+  color: #dddddd;
+}
+
+.contenido .skills .titulo {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: start;
+  /* margin-left: 1rem; */
+}
+.contenido .skills .parrafo {
+  display: block;
+  padding: 2rem;
+  opacity: 0;
+  transition: 0.4s ease-out;
+}
+.contenido .skills .parrafo p {
+  color: #0a0a0a;
+  text-align: center;
+  font-size: 1.2rem;
+  transition-delay: 0.4s;
+}
+
+.experiencia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+}
+
+.izquierda {
+  order: 1;
+}
+.izquierda p{
+  font-size: 1.5rem;
+}
+
+.derecha {
+  order: 2;
+}
+.derecha p {
+  font-size: 1.5rem;
+}
+
+.card-experiencia {
+  position: relative;
+  background-color: white;
+  border-radius: 0.3rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+  overflow: hidden;
+}
+.card-experiencia .ano-experiencia {
+  padding: 0.5rem;
+  font-weight: 900;
+  color: #0a0a0a;
+  margin: 0.5rem;
+  border-radius: 3px;
+  font-size: 2rem;
+  transition: 0.2s ease-out;
+}
+.card-experiencia .descripcion-experiencia {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  background-color: #0a0a0a;
+  padding: 1rem;
+}
+.card-experiencia .descripcion-experiencia .titulo-experiencia {
+  transition: 1s ease-out;
+}
+.card-experiencia .descripcion-experiencia .titulo-experiencia p {
+  color: white;
+  margin: 0;
+  opacity: 1;
+  font-size: 1rem;
+  transition: 0.4s ease-out;
+}
+.card-experiencia .descripcion-experiencia .empresa-experiencia {
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+}
+.card-experiencia:hover {
+  transform: translateY(-5px) translateX(-5px);
+  background-color: #0a0a0a;
+}
+.card-experiencia:hover .ano-experiencia {
+  color: white;
+  transform: translateX(10px);
+}
+
+.clientes_experiencia {
+  width: 80%;
+  margin: 4rem auto 0rem auto;
+  text-align: center;
+}
+.clientes_experiencia h4 {
+  font-size: 4rem;
+}
+.clientes_experiencia p {
+  font-size: 2rem;
+}
+.clientes_experiencia .contenedor-titulo {
+  text-align: center;
+  padding: 2rem;
+}
+.clientes_experiencia .clientes-titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  color: #0a0a0a;
+  border-radius: 0.5rem;
+  background-color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+.clientes_experiencia .clientes-titulo:hover {
+  background-color: #0a0a0a;
+  color: white;
+  transform: scale(1.1);
+  margin: 0.2rem 0.6rem;
+}
+
+.showcase {
+  width: 100%;
+  background-color: #0a0a0a;
+  position: relative;
+}
+.showcase .selector-menu {
+  position: absolute;
+  top: -98px;
+}
+.showcase .portafolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0rem;
+  width: 100%;
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  .showcase .portafolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0rem;
+  }
+}
+.showcase .card-portafolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.showcase .card-portafolio .titulo-portafolio h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 1rem;
+  text-align: center;
+  transition: 0.3s ease-out;
+}
+@media (max-width: 768px) {
+  .showcase .card-portafolio .titulo-portafolio h2 {
+    font-size: 1rem;
+  }
+}
+.showcase .card-portafolio .descripcion-portafolio {
+  padding: 0.2rem 3rem;
+}
+.showcase .card-portafolio .descripcion-portafolio .tags-portafolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.showcase .card-portafolio .descripcion-portafolio .tags-portafolio .tags {
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  margin: 0.2rem;
+  background-color: #0a0a0a;
+  font-weight: 600;
+}
+.showcase .card-portafolio .boton-portafolio {
+  position: absolute;
+  right: -80px;
+  bottom: -30px;
+  font-weight: 900;
+  font-size: 7rem;
+  z-index: 0;
+  color: white;
+  transition: 0.3s ease-out;
+}
+.showcase .card-portafolio .imagen-portafolio {
+  position: absolute;
+  margin: 0;
+  text-align: center;
+}
+.showcase .card-portafolio .imagen-portafolio img {
+  opacity: 1;
+  transition: 0.3s ease-out;
+  min-height: 500px;
+  min-width: 500px;
+}
+.showcase .card-portafolio:hover {
+  background-color: #ffee01;
+}
+.showcase .card-portafolio:hover .imagen-portafolio img {
+  opacity: 0;
+  transform: scale(1.3);
+}
+.showcase .card-portafolio:hover .boton-portafolio {
+  transform: translateX(-70px);
+}
+.showcase .card-portafolio:hover .titulo-portafolio h2 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.projects {
+  width: 100%;
+  height: 100vh;
+  background-color: #ff8800;
+}
+
+.contact {
+  padding-top: 99px;
+  width: 100%;
+  background-color: #0a0a0a;
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+.contact::before {
+  content: "Conect";
+  position: absolute;
+  bottom: -20px;
+  right: 0px;
+  font-weight: 900;
+  font-size: 9rem;
+  color: #121212;
+}
+.contact .contenedor-contacto {
+  position: relative;
+  margin: 0 auto;
+  max-width: 80%;
+  height: 400px;
+}
+.contact .contenedor-contacto h2 {
+  font-size: 4rem;
+  color: #ffee01;
+}
+.contact .contenedor-contacto .logo-contacto img {
+  width: 160px;
+}
+.contact p {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+.contact .datos-contacto {
+  color: #ffee01;
+}
+.contact .datos-contacto h4 {
+  padding: 1rem;
+  display: inline-block;
+  font-weight: 300;
+  font-size: 2rem;
+  background-color: #ffee01;
+  color: #0a0a0a;
+  border-radius: 5px;
+  margin: 0.5rem;
+}

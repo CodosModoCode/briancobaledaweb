@@ -1,0 +1,92 @@
+.contact{
+    padding-top: 200px;
+    width: 100%;
+    background-color:$negro;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 5rem;
+
+    @include tablet{
+        padding-top: 90px;
+    }
+
+    hr{
+        margin: 3rem 0;
+    }
+
+    .footer_end{
+        font-size: .9rem;
+        color: lighten($color: $negro, $amount: 50);
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    &::before {
+            content: 'Conect';
+            position: absolute;
+            bottom: -20px;
+            right: 0px;
+            font-weight: 900;
+            font-size: 9rem;
+            color: lighten($color: $negro, $amount: 3)
+        }
+        
+        h2 {
+            top: 30px;
+            right: 0;
+            font-size: 11rem;
+            color: $amarillo;
+            position: absolute;
+
+            @include tablet{
+                font-size: 4rem;
+            }
+        }
+    .contenedor-contacto{
+        position: relative;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+    p{  
+        text-align: center;
+        color: $blanco;
+        font-size: 2rem;
+
+        @include tablet{
+            font-size: 1.2rem;
+        }
+    }
+
+    .datos-contacto{
+
+        .botones-contacto{
+            padding: 1rem;
+            display: inline-block;
+            font-weight: 300;
+            font-size: 2rem;
+            background-color:$amarillo;
+            color: $negro;
+            border-radius: 5px;
+            margin: .5rem;
+            cursor: pointer;
+            transition: .2s ease;
+            
+                        &:hover{
+                            background-color: $blanco;
+                        }
+
+            @include tablet{
+                font-size: 1.2rem;
+                padding: .5rem;
+            }
+        }
+        color: $amarillo;
+       
+
+
+    }
+
+   
+
+}

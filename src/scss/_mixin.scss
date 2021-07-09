@@ -1,0 +1,38 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-center-l {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+@mixin flex-center-r {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+@mixin d-grid ($fracciones, $espaciado) {
+    display: grid;
+    grid-template-columns: repeat($fracciones, 1fr);
+    column-gap: $espaciado;
+}
+
+// responsive
+
+@mixin tablet {
+    @media (max-width:768px) {
+        @content;
+    }
+}
+@mixin telefono {
+    @media (max-width:450px) {
+        @content;
+    }
+}
+@mixin pc {
+    @media (max-width:1200px) {
+        @content;
+    }
+}

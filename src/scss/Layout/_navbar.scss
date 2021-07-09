@@ -1,0 +1,122 @@
+.navbar-responsive{
+
+   
+    background-color: $amarillo;
+    position: absolute;
+    position: fixed;
+    width: 100%;
+    bottom:0;
+
+    display: none;
+    z-index: 10000;
+    transition: .2s ease-out;
+    cursor: pointer;
+    @include tablet{
+        display: inline-block;
+    }
+
+
+    &:hover{
+        background-color: $blanco;
+
+        .icono{
+            transform: scale(1.1);
+        }
+    }
+    // @include pc{
+    //     display: none;
+    // }
+    .contenido-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .icono{
+        transition: .3s ease-out;
+        color: $negro;
+        font-weight: 900;
+        font-size: 1.4rem;
+        padding-top: 1rem;
+    }
+
+    .menu-responsive, li{
+       list-style: none;
+       padding: 0;
+
+       li{
+           font-size: 2rem;
+           padding: 1rem;
+           border-radius: .2rem;
+           transition: .3s ease-out;
+
+           &:hover{
+               background-color: $negro;
+           }
+       }
+    }
+}
+
+
+.navbar{
+    padding: 1rem;
+    @include flex-center;
+    list-style: none;
+    z-index: 10000;
+    overflow: hidden;
+    padding: 0;
+    margin: 3rem 0rem ;
+    
+    @include tablet{
+        display: none;
+    }
+
+    .fondo-image{
+        transition: .2s ease-out;
+        img{
+            width: 50px;
+            opacity: .3;
+        }
+    }
+    .fondoMenu{
+        position: absolute;
+        top: 0;
+        left: -7rem;
+        
+        color: $amarillo;
+        font-weight: 900;
+        font-size: 8rem;
+        transition: .3s ease-out;
+        z-index: 10000;
+        opacity: 0;
+    }
+  
+  
+    .links{
+
+        font-size: 1.2rem;
+        color: $gris;
+        list-style: none;
+        margin: 0 1rem;
+        transition: .2s ease-out;
+        padding: .4rem;
+        z-index: 1000;
+        border-radius: 5px;
+        text-align: center;
+
+
+    }
+    & .links:hover{
+        background-color: $amarillo;
+        letter-spacing: 0rem;
+        padding: .1rem 1rem;
+        font-weight: 600;
+        color: black;
+        margin: 0 1rem;
+    }
+    &:hover .fondoMenu{
+        transform: translateX(100px);
+        opacity: 1;
+    }
+    
+}

@@ -1,0 +1,56 @@
+.clientes_experiencia{
+    width: 80%;
+    margin: 4rem auto 0rem auto;;
+    text-align: center;
+    h4{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 2rem;
+
+        @include tablet{
+            font-size: 1.2rem;
+        }
+    }
+    @include tablet{
+        display: none;
+    }
+    .contenedor-titulo{
+        // display: flex;
+        text-align: center;
+        padding: 2rem;
+
+        @include tablet{
+            padding: 1rem
+        }
+
+    }
+    .clientes-titulo{
+        @include flex-center;
+        margin: .4rem;
+        display: inline-block;
+        padding: .5rem 1rem;
+        color: $negro;
+        border-radius: .5rem;
+        background-color: $blanco   ;
+        font-weight: 600;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: .2s ease-out;
+
+        @include tablet{
+            font-size: .9rem;
+            margin: .1rem;
+            // padding: .5rem .5rem;
+            font-weight: 300;
+        }
+
+
+        &:hover{
+            background-color: $negro;
+            color: $blanco;
+            transform: translateY(-2px);
+            margin: .2rem .6rem;
+        }
+    }
+}

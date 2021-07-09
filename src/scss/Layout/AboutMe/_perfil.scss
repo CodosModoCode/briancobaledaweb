@@ -1,0 +1,209 @@
+.contenedor-Perfil{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    @include d-grid(3, 0rem);
+    justify-content: center;
+    background-color: $negro;
+    border-radius: 1rem;
+
+    @include tablet{
+        @include d-grid(1, 0);
+        width: 70%;
+    }
+
+    hr{
+        color: $amarillo;
+        opacity: .3;
+        width: 100%;
+        float: left;
+    }
+    // izquierda
+    .zona-Izquierda{
+        display: flex;
+        flex-direction: column;
+        padding: 1.2rem 1.2rem;
+
+        @include tablet{
+            order: 2;
+        }
+        
+        .titulo{
+            font-weight: 300;
+            font-size: 2rem;
+            color: $amarillo;
+            text-align: end;
+
+            @include tablet{
+                text-align: center;
+            }
+        }
+        .descripcion{
+            p{
+                font-size: 1rem;
+                color: $blanco;
+                text-align: right;
+
+                @include tablet{
+                    text-align: center;
+                }
+            }
+        }
+        .redes-perfil{
+            // width: 100%;
+            background-color: $amarillo;
+            color: white;
+            border-radius: .3rem;
+            overflow: hidden;
+            display: flex;
+            position: relative;
+
+            
+
+            .titulo{
+                background-color: $blanco;
+                height: 100%;
+                color: $negro;
+                font-size: 1.2rem;
+                padding: .5rem 1rem;
+            }
+            .contenedor-iconos-redes{
+                padding: 0 1rem;
+                color: $negro;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .iconos{
+                    cursor: pointer;
+                    margin: 0 .5rem;
+                    font-size: 1rem;
+                    transition: .2s ease-out;
+
+                    &:hover{
+                        color: darken($color: $amarillo, $amount: 20);
+                        transform: scale(1.1);
+                        margin: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+    // centro
+    .contenedor-foto-perfil{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s ease;
+        position: relative;
+        cursor: pointer;
+
+        @include tablet{
+            margin: 2rem 0;
+            order: 1;
+        }
+        &:hover{
+            transform: scale(1.1);
+
+            .edad{
+                transform: scale(1.2);
+            }
+            .foto-perfil{
+                border: lighten($color: $amarillo, $amount: 0) 15px solid;
+            }
+        }
+        .edad{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            z-index: 10;
+            width: 4rem;
+            height: 4rem;
+            font-size: 2rem;
+            background-color: $amarillo;
+            color: $negro;
+            font-weight: 300;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .2s ease-out;
+            transition-delay: .1s;
+        }
+        .foto-perfil{
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: $blanco;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease-out;
+            transition-delay: .1s;
+            border: lighten($color: $amarillo, $amount: 40) 5px solid;
+        }
+    }
+    // derecha
+    .zona-derecha{
+        @include tablet{
+            order: 3;
+            
+        }
+        .secciones{
+
+            @include tablet{
+                width: 90%;
+                // display: flex;
+                // justify-content: center;
+                margin: 0 auto;
+            }
+            .titulo{
+                font-size: 1.3rem;
+                color: $amarillo;
+
+            }
+            .iconos{
+                color: lighten($color: $negro, $amount: 80);
+                font-size: 1rem;
+                margin: .5rem 0;
+                display: flex;
+
+                .hobbies{
+                    background-color: $amarillo;
+                    padding: .5rem;
+                    border-radius: .5rem;
+                    color: $negro;
+                    margin-left: .5rem;
+                    display: flex;
+                    gap: .8rem;
+                    cursor: pointer;
+                    width: 20px;
+                    transition: .2s ease;
+                    position: relative;
+
+                    .label{
+                        // display: none;
+                        position: absolute;
+                        opacity: 0;
+                        transition: .2s ease;
+                        right: 1rem;
+                        font-weight: 600;
+                        color: $negro;
+                        font-size: 1rem;
+
+                    }
+
+                    &:hover{
+                        width: 100px;
+                        .label{
+                            opacity: 1;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

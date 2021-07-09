@@ -1,0 +1,21 @@
+@import 'src/scss/normalize';
+@import 'src/scss/variables';
+@import 'src/scss/globales';
+@import 'src/scss/mixin';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;600;900&display=swap');
+
+// home section
+@import 'src/scss/Layout/home';
+@import 'src/scss/Layout/navbar';
+@import 'src/scss/Layout/experience';
+// aboutme_stylesheets
+@import 'src/scss/Layout/AboutMe/perfil';
+@import 'src/scss/Layout/AboutMe/about';
+@import 'src/scss/Layout/AboutMe/skills';
+@import 'src/scss/Layout/AboutMe/experience';
+@import 'src/scss/Layout/AboutMe/clients';
+// portafolio
+@import 'src/scss/Layout/portafolio/showcase';
+
+@import 'src/scss/Layout/projects';
+@import 'src/scss/Layout/contact';

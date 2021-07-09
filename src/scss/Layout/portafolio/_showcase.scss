@@ -1,0 +1,284 @@
+.showcase{
+    width: 100%;
+    background-color:$negro;
+    position: relative;
+    margin: 0 auto;
+    
+    .selector-menu{
+        position: absolute;
+        top: -98px
+    }
+
+    .portafolio{
+        @include d-grid (2, 0rem);
+        width: 80%;
+        margin: 0 auto;
+        padding: 2rem;
+        
+        @include tablet{
+            @include d-grid (1, 0rem);
+        }
+
+        .header{
+            grid-column: 1/4;
+            color: $amarillo;
+            width: 100%;
+            position: relative;
+            padding-top: 0rem;
+            margin-bottom: 3rem;
+            display: flex;
+            // justify-content: end;
+            
+            @include tablet{
+               grid-column: 1/3;
+           }
+
+            .titulo{
+                position: absolute;
+                font-size: 12rem;
+                font-weight: 900;
+                color: $amarillo;
+                z-index: 60;
+                top: -100px;
+                left: -180px;
+
+                @include tablet{
+                    font-size: 5rem;
+                    top: -20px;
+                    left: -20px;
+                }
+            }
+            p{
+                width: 60%;
+                padding: .5rem 0;
+                font-size: 1.5rem;
+                color: $blanco;
+                text-align: end;
+                
+                @include tablet{
+                    padding-top: 5rem;
+                    font-size: 1.2rem;
+                    width: 80%;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+        }
+        .card-book{
+            background-color: $amarillo;
+            padding: 2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            z-index: 500;
+
+            @include tablet{
+                grid-column: 1/3;
+                border-radius: .5rem;
+            }
+            
+            &:nth-child(2){
+                border-radius: .5rem 0 0 .5rem;
+                @include tablet{
+                    border-radius: .5rem;
+                }
+            }
+            &:nth-child(3){
+                
+                border-radius: 0 .5rem .5rem 0;
+                // margin-top: .5rem;
+                @include tablet{
+                    border-radius: .5rem;
+                }
+            }
+
+            &:hover{
+                background-color: $negro;
+                -webkit-box-shadow: 0px -1px 17px 4px rgba(0,0,0,0.45); 
+                box-shadow: 0px -1px 17px 4px rgba(0,0,0,0.45);
+                .titulo{
+                    transform: scale(.5) translateY(-100px);
+                    opacity: 1;
+                }
+                .imagen{
+                    opacity: .5;
+                    transform: scale(1.1) rotate(2deg);
+
+                    
+                }
+                .label{
+                    opacity: 1;
+                    transform: translateY( 30px) scale(.8);
+                }
+            }
+
+            .titulo{
+               position: absolute;
+               z-index: 300;
+               font-size: 5rem;
+               color: $negro;
+               border-radius: 50%;
+               background-color: $amarillo;
+               width: 10rem;
+               height: 10rem;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               transition: .2s ease-out;
+            }
+            .label{
+                position: absolute;
+               z-index: 400;
+               padding: 1rem;
+               font-weight: 600;
+               font-size: 3rem ;
+               background-color: $negro;
+               color: $blanco;
+               border-radius: .5rem;
+               transition: .2s ease-out;
+               opacity: 0;
+               transform: translateY(-10px);
+               transition-delay: .1s;
+            }
+            .imagen{
+                z-index: 15;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: .2s ease-out;
+
+                img{
+                    width: 120%;
+                    float: right;
+
+                    @include tablet{
+                        width: 150%;
+                    }
+                }
+            }
+        }
+
+        @include tablet{
+            @include d-grid (2, 0rem);
+        }
+    }
+
+
+
+}
+
+
+// .showcase{
+//     width: 100%;
+//     background-color:$negro;
+//     position: relative;
+//     .selector-menu{
+//         position: absolute;
+//         top: -98px
+//     }
+//     .portafolio{
+//         @include d-grid (3, 0rem);
+//         width: 100%;
+//         min-height: 100vh;
+
+//         @include tablet{
+//             @include d-grid (2, 0rem);
+//         }
+//     }
+
+//     .card-portafolio{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         height: 50vh;
+//         cursor: pointer;
+//         position: relative;
+//         overflow: hidden;
+        
+//         .titulo-portafolio{
+//             h2{
+//                 font-size: 2rem;
+//                 font-weight: 300;
+//                 padding: 1rem;
+//                 text-align: center;
+//                 transition: .3s ease-out;
+                
+//                 @include tablet{
+//                     font-size: 1rem;
+//                 }
+//             }
+//         }
+        
+//         .descripcion-portafolio{
+//            padding: .2rem 3rem;
+//             .tags-portafolio{
+//                 display: flex;
+//                 flex-wrap: wrap;
+//                 justify-content: center;
+//                 align-items: center;
+                
+//                 .tags{
+//                     border-radius: 6px;
+//                     padding: .5rem 1rem;
+//                     font-size: 1rem;
+//                     color: $blanco;
+//                     margin: .2rem;
+//                     background-color: $negro;
+//                     font-weight: 600;
+                  
+//                 }
+//             }
+//         }
+//         .boton-portafolio{
+//             position: absolute;
+//             right: -80px;
+//             bottom: -30px;
+//             font-weight: 900;
+//             font-size: 7rem;
+//             z-index: 0;
+//             color: $blanco;
+//             transition: .3s ease-out;
+//         }
+
+//         .imagen-portafolio{
+//             position: absolute;
+//             margin: 0;
+//             text-align: center;
+
+//             img{
+//                 // width: 100%;
+//                 // height: 100%;
+//                 opacity: 1;
+//                 transition: .3s ease-out;
+//                 min-height: 500px;
+//                 min-width: 500px
+//             }
+
+//         }
+//         &:hover{
+//             background-color: $amarillo;
+//             .imagen-portafolio{
+               
+//                 img{
+//                     opacity: .0;
+//                     transform: scale(1.3);
+//                 }
+    
+//             }
+//             .boton-portafolio{
+//                 transform: translateX(-70px);
+//             }
+//             .titulo-portafolio{
+//                 h2{
+//                     font-size: 2rem;
+//                     letter-spacing: .2rem;
+//                 }
+//             }
+//         }
+//     }
+
+// }
